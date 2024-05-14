@@ -19,6 +19,7 @@ class CityView(ViewSet):
         return Response(serialized.data, status=status.HTTP_200_OK)
 
     def list(self, request):
+        print('cities baby')
         # Step 1: Get all city data from the database
         cities = City.objects.all()
 
